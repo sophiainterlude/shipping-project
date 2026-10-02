@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+    <title>Tracking Result</title>
+</head>
+
+<body class="bg-[#fdf6f3] text-[#25252d]">
+
+    <nav class="h-[90px] bg-[#f9b6a5] flex items-center justify-between px-[7%] border-b border-[#e8a99a]">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg  flex items-center justify-center text-white text-xl font-bold">
+                <a href="index.html" class=" flex items-center  m-2 px-12 py-4">
+                    <i class="fa-solid fa-ship" style="font-size:20px; color:black;"></i>
+                    <p class="pl-2 font-bold text-2xl text-[#30313a]">Sophia Ships</p>
+                </a>
+            </div>
+        </div>
+        <div class="flex items-center gap-10">
+            <a href="#" class="font-medium text-[#30313a] hover:text-black">Home</a>
+            <a href="#" class="font-medium text-[#30313a] hover:text-black">Tracking</a>
+            <a href="#" class="bg-[#9fa7a8] hover:bg-black text-white px-7 py-3 rounded-full">
+                Get Quote
+            </a>
+        </div>
+    </nav>
+
+    <main class="px-[7%] py-10">
+        <div class="flex items-center gap-3 text-sm mb-5">
+            <a href="index.html" class="text-gray-500">Tracking</a>
+            <span>/</span>
+            <span class="font-semibold">Result</span>
+        </div>
+        <div class="flex items-center justify-between mb-8">
+            <h1 class="text-4xl font-bold">Shipment #LT-8839201</h1>
+            <div class="flex items-center gap-2 bg-[#e8f4ed] text-[#619875] px-5 py-2.5 rounded-full">
+                <span class="w-2.5 h-2.5 bg-[#70a987] rounded-full"></span>
+                In Transit
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
+            <section>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+                    <div class="h-[430px] relative overflow-hidden bg-[#e5e2d9]">
+                        <img src="assets/images/air.jpg" alt="Map" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-7">
+                        <h2 class="text-xl font-bold mb-6">Shipment History</h2>
+                        <div class="relative pl-8">
+                            <div class="relative mb-7">
+                                <div class="absolute -left-[28px] top-1 w-3 h-3 rounded-full bg-[#e68770]"></div>
+                                <p class="text-sm text-gray-500">Today, 09:45 AM</p>
+                                <h3 class="font-bold mt-1">Arrived at Sorting Facility</h3>
+                                <p class="text-sm text-gray-500">Chicago, IL Distribution Center</p>
+                            </div>
+                            <div class="relative mb-7">
+                                <div class="absolute -left-[28px] top-1 w-3 h-3 rounded-full bg-gray-400"></div>
+                                <p class="text-sm text-gray-500">Yesterday, 06:30 PM</p>
+                                <h3 class="font-bold mt-1">Departed Origin Facility</h3>
+                                <p class="text-sm text-gray-500">New York, NY</p>
+                            </div>
+                            <div class="relative mb-7">
+                                <div class="absolute -left-[28px] top-1 w-3 h-3 rounded-full bg-gray-400"></div>
+                                <p class="text-sm text-gray-500">Oct 24, 02:15 PM</p>
+                                <h3 class="font-bold mt-1">Package Picked Up</h3>
+                                <p class="text-sm text-gray-500">Sender Location, New York, NY</p>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute -left-[28px] top-1 w-3 h-3 rounded-full bg-gray-400"></div>
+                                <p class="text-sm text-gray-500">Oct 24, 10:00 AM</p>
+                                <h3 class="font-bold mt-1">Label Created</h3>
+                                <p class="text-sm text-gray-500">Shipping information received</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="space-y-6">
+                <div class="bg-white rounded-2xl p-7 shadow-sm">
+                    <h2 class="text-lg font-bold mb-7">Package Details</h2>
+                    <div class="space-y-5">
+                        <div class="flex justify-between gap-5">
+                            <span class="text-gray-500">Weight</span>
+                            <span class="font-medium">24.5 kg</span>
+                        </div>
+                        <div class="flex justify-between gap-5">
+                            <span class="text-gray-500">Dimensions</span>
+                            <span class="font-medium">40x30x20 cm</span>
+                        </div>
+                        <div class="flex justify-between gap-5">
+                            <span class="text-gray-500">Service Type</span>
+                            <span class="font-medium">Express Air</span>
+                        </div>
+                        <div>
+                            <p class="text-gray-500 mb-2">Description</p>
+                            <p class="font-medium">Electronic Components (Semiconductors)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-7 shadow-sm">
+                    <div class="flex items-center gap-1 mb-5">
+                     <i class="fa-solid fa-location-dot"></i>
+                        <span class="text-[#df8a72] text-xl"></span>
+                        <h2 class="text-lg font-bold">Sender</h2>
+                    </div>
+                    <h3 class="font-semibold">TechFlow Industries</h3>
+                    <p class="text-gray-500 mt-2">+1 (212) 555-0199</p>
+                    <p class="text-gray-500 mt-3 leading-6">
+                        450 West 33rd Street,<br>
+                        New York, NY 10001,<br>
+                        USA
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-7 shadow-sm">
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="text-xl"><i class="fa-regular fa-user"></i></span>
+                        <h2 class="text-lg font-bold">Receiver</h2>
+                    </div>
+                    <h3 class="font-semibold">Global Retail Solutions</h3>
+                    <p class="text-gray-500 mt-2">+1 (312) 555-0892</p>
+                    <p class="text-gray-500 mt-3 leading-6">
+                        233 S Wacker Dr,<br>
+                        Chicago, IL 60606,<br>
+                        USA
+                    </p>
+                </div>
+                <button class="w-full bg-[#30313a] text-white py-4 rounded-xl font-semibold hover:bg-[#000] transition">Download Invoice</button>
+            </section>
+        </div>
+    </main>
+    <footer class="bg-[#30313a] text-gray-400 text-center py-8 mt-10">
+        © 2026 SophiaShips. All rights reserved.
+    </footer>
+
+</body>
+</html>

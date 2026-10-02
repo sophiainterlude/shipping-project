@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sophia Ships</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body
+    class="relative box-border overflow-x-hidden text-base font-normal no-underline">
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <section class="relative z-[100]">
+
+        <div class="grid grid-cols-4 items-center bg-[#f3d6d8]">
+
+            <nav
+                class="col-span-4 block items-center min-[561px]:grid min-[561px]:grid-cols-4">
+
+                <!-- LOGO + MOBILE MENU -->
+                <div
+                    id="wrapper"
+                    class="flex items-center justify-between min-[561px]:contents">
+
+                    <a
+                        href="#"
+                        class="m-2 flex flex-row items-center bg-[#f3d6d8] px-12 py-4 no-underline">
+
+                        <i
+                            class="fa-solid fa-ship text-[20px] text-black">
+                        </i>
+
+                        <p
+                            class="pl-[0.4rem] text-[1.5rem] font-extrabold text-black">
+                            Sophia Ships
+                        </p>
+
+                    </a>
+
+                    <!-- MOBILE MENU BUTTON -->
+                    <button
+                        id="menu-icon"
+                        class="flex cursor-pointer justify-end border-0 bg-transparent p-4 text-[25px] min-[561px]:hidden">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </div>
+
+
+                <!-- NAV LINKS -->
+
+                <ul
+                    id="desktop"
+                    class="nav-list col-start-3 col-span-2 m-[0.7rem] grid-cols-5 flex-row gap-6 p-[0.7rem] text-[1.2rem] font-normal min-[561px]:grid max-[560px]:hidden">
+
+                    <li>
+                        <a
+                            href="#"
+                            class="text-[#242323] no-underline transition duration-500 ease-in hover:font-bold hover:text-black">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#services"
+                            class="text-[#242323] no-underline transition duration-500 ease-in hover:font-bold hover:text-black">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#tracking"
+                            class="text-[#242323] no-underline transition duration-500 ease-in hover:font-bold hover:text-black">
+                            Tracking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#about"
+                            class="text-[#242323] no-underline transition duration-500 ease-in hover:font-bold hover:text-black">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <button
+                            class="rounded-[25px] border-0 bg-[#8b5e5e] px-[1.4rem] py-4 text-white">
+                            Get Quote
+                        </button>
+                    </li>
+
+                </ul>
+
+
+                <!-- MOBILE NAV -->
+
+                <ul
+                    id="mobile"
+                    class="hidden list-none flex-col gap-5 bg-[#f3d6d8] p-6 max-[560px]:block">
+
+                    <li>
+                        <a
+                            href="#"
+                            class="text-[#242323] no-underline">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#services"
+                            class="text-[#242323] no-underline">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#tracking"
+                            class="text-[#242323] no-underline">
+                            Tracking
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#about"
+                            class="text-[#242323] no-underline">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <button
+                            class="rounded-[25px] border-0 bg-[#8b5e5e] px-6 py-3 text-white">
+                            Get Quote
+                        </button>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+    </section>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main
+        class="relative flex min-h-screen flex-col items-center justify-start overflow-hidden bg-[#f5e8df] bg-[url('assets/images/air.jpg')] bg-cover bg-center bg-no-repeat px-8 py-12 text-center">
+
+        <!-- OVERLAY -->
+        <div
+            class="absolute inset-0 bg-black/30">
+        </div>
+
+
+        <!-- HERO CONTENT -->
+
+        <div
+            class="relative z-10 flex w-full flex-col items-center">
+
+            <p
+                class="text-[1rem] font-bold tracking-[2px] text-[#49190b]">
+                FAST & RELIABLE SHIPPING
+            </p>
+
+            <h1
+                class="my-4 w-1/2 overflow-hidden text-center text-[3.2rem] text-[#f3d6d8] min-[561px]:text-[4.5rem]">
+
+                Fastest Delivery By Air
+
+            </h1>
+
+
+            <p
+                class="w-1/2 overflow-hidden text-center text-xl leading-7 text-[#49190b]">
+
+                When time is critical, our air freight network ensures your
+                goods arrive on schedule, every time.
+
+            </p>
+
+
+            <div class="flex flex-wrap justify-center">
+
+                <button
+                    id="quotes"
+                    class="mx-2 my-8 overflow-hidden rounded-lg border-0 bg-[#b76e79] px-8 py-4 text-white">
+
+                    Get Air Quote
+
+                </button>
+
+
+                <a
+                    href="#"
+                    class="contact mx-2 my-8 overflow-hidden rounded-lg border-2 border-[#fff4e6] px-8 py-4 text-[#f5e8df] no-underline transition duration-500 ease-in hover:bg-[#fff4e6] hover:text-black">
+
+                    Contact Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= TRACKING ================= -->
+
+    <div
+        id="tracking"
+        class="absolute left-1/2 top-[108vh] z-[500] flex w-4/5 -translate-x-1/2 items-center gap-8 overflow-hidden rounded-[15px] bg-[#f4e8d8] p-8 max-[768px]:relative max-[768px]:top-0 max-[768px]:my-8 max-[768px]:w-[90%] max-[768px]:flex-col">
+
+        <h2 class="text-[#5a382d]">
+            Track Your Cargo
+        </h2>
+
+        <input
+            type="text"
+            placeholder="Ex: SS-123456789"
+            class="w-1/2 rounded-lg border-0 p-4 max-[768px]:w-full">
+
+        <button
+            class="rounded-lg border-0 bg-[#7a5145] px-6 py-4 text-white">
+
+            Track Result
+
+        </button>
+
+    </div>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section
+        id="about"
+        class="relative min-h-screen overflow-hidden bg-[#c77b8a]">
+
+        <div
+            class="relative top-24 flex w-full flex-row justify-between px-4 py-20 max-[768px]:top-0 max-[768px]:flex-col">
+
+            <!-- IMAGE -->
+
+            <div
+                class="relative mr-8 w-1/2 max-[768px]:mr-0 max-[768px]:w-full">
+
+                <img
+                    src="assets/images/hey.jpg"
+                    alt="Shipping"
+                    class="w-full rounded-[20px]">
+
+                <!-- EXPERIENCE BOX -->
+
+                <div
+                    class="absolute right-0 bottom-16 w-fit rounded-xl border-l-2 border-l-yellow-400 bg-white p-4">
+
+                    <p
+                        class="pl-0 text-3xl font-extrabold text-[#5a382d]">
+                        15+
+                    </p>
+
+                    <p
+                        class="pl-0 text-base font-normal text-[#5a382d]">
+                        Years Experience
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ABOUT TEXT -->
+
+            <div
+                class="w-1/2 max-[768px]:mt-10 max-[768px]:w-full">
+
+                <p
+                    class="pl-0 font-bold text-white">
+                    ABOUT SOPHIA SHIPS
+                </p>
+
+
+                <h2
+                    class="text-[2.5rem] text-[#5a382d]">
+                    We Move Your Business Forward.
+                </h2>
+
+
+                <p
+                    id="idk"
+                    class="pt-4 font-normal text-white">
+
+                    Founded on the principles of reliability and innovation,
+                    SophiaShips has grown into a global leader in supply chain
+                    solutions. We don't just move boxes, we optimize your
+                    entire logistics network to save you time and money.
+
+                </p>
+
+
+                <!-- ABOUT INFO -->
+
+                <div
+                    class="mt-8 flex flex-row items-center gap-12 max-[768px]:flex-col max-[768px]:items-start">
+
+                    <div>
+
+                        <h3
+                            class="text-3xl font-extrabold text-[#5a382d]">
+                            Global Reach
+                        </h3>
+
+                        <p
+                            class="mt-4 pl-0 text-xl font-normal text-white">
+                            Operations in 120+ countries worldwide.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3
+                            class="text-3xl font-extrabold text-[#5a382d]">
+                            24/7 Support
+                        </h3>
+
+                        <p
+                            class="mt-4 pl-0 text-xl font-normal text-white">
+                            Dedicated agents ready to assist anytime.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LEARN BUTTON -->
+
+                <button
+                    class="mt-6 rounded-lg border-0 bg-[#5a382d] px-6 py-4 text-white">
+
+                    Learn More
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section
+        id="services"
+        class="bg-[#f8f3ed] px-[25px] py-[60px] text-center md:px-[8%] md:py-20">
+
+
+        <!-- SERVICES INTRO -->
+
+        <div
+            class="mx-auto mb-[70px] max-w-[700px] text-center">
+
+            <p
+                class="text-[17px] font-bold leading-[1.7] text-[#c77b8a] md:text-[20px]">
+                OUR EXPERTISE
+            </p>
+
+
+            <h2
+                class="text-[2.5rem] text-[#5a382d]">
+                Comprehensive Logistic Services
+            </h2>
+
+
+            <p
+                class="mt-2 text-[17px] leading-[1.7] text-[#5c4033] md:text-[20px]">
+
+                From air freight to last-mile delivery, we offer a full suite
+                of services tailored to your specific business needs.
+
+            </p>
+
+        </div>
+
+
+        <!-- SERVICE CARDS -->
+
+        <div
+            class="grid grid-cols-1 gap-[50px] md:grid-cols-3 md:gap-[60px]">
+
+
+            <!-- AIR FREIGHT -->
+
+            <div
+                class="text-left">
+
+                <div
+                    class="mb-[25px] text-[35px] text-[#6b4f3a]">
+
+                    <i class="fa-solid fa-plane"></i>
+
+                </div>
+
+
+                <h2
+                    class="mb-[18px] text-2xl text-[#3f2b20]">
+
+                    Air Freight
+
+                </h2>
+
+
+                <p
+                    class="mb-[25px] pl-0 text-base font-normal leading-[1.6] text-[#6b625c]">
+
+                    Fast and secure air cargo solutions for time-sensitive
+                    shipments globally.
+
+                </p>
+
+
+                <a
+                    href="#"
+                    class="text-sm font-bold text-[#b58b5a] no-underline hover:text-[#6b4f3a]">
+
+                    READ MORE →
+
+                </a>
+
+            </div>
+
+
+            <!-- OCEAN FREIGHT -->
+
+            <div
+                class="text-left">
+
+                <div
+                    class="mb-[25px] text-[35px] text-[#6b4f3a]">
+
+                    <i class="fa-solid fa-truck"></i>
+
+                </div>
+
+
+                <h2
+                    class="mb-[18px] text-2xl text-[#3f2b20]">
+
+                    Ocean Freight
+
+                </h2>
+
+
+                <p
+                    class="mb-[25px] pl-0 text-base font-normal leading-[1.6] text-[#6b625c]">
+
+                    Cost-effective FCL and LCL shipping options for large
+                    volume international trade.
+
+                </p>
+
+
+                <a
+                    href="#"
+                    class="text-sm font-bold text-[#b58b5a] no-underline hover:text-[#6b4f3a]">
+
+                    READ MORE →
+
+                </a>
+
+            </div>
+
+
+            <!-- LAST MILE DELIVERY -->
+
+            <div
+                class="text-left">
+
+                <div
+                    class="mb-[25px] text-[35px] text-[#6b4f3a]">
+
+                    <i class="fa-solid fa-truck-fast"></i>
+
+                </div>
+
+
+                <h2
+                    class="mb-[18px] text-2xl text-[#3f2b20]">
+
+                    Last-Mile Delivery
+
+                </h2>
+
+
+                <p
+                    class="mb-[25px] pl-0 text-base font-normal leading-[1.6] text-[#6b625c]">
+
+                    Reliable final-mile delivery solutions that get your
+                    products to customers safely and on time.
+
+                </p>
+
+
+                <a
+                    href="#"
+                    class="text-sm font-bold text-[#b58b5a] no-underline hover:text-[#6b4f3a]">
+
+                    READ MORE →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        const menuIcon = document.getElementById("menu-icon");
+        const mobileMenu = document.getElementById("mobile");
+
+        menuIcon.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+    </script>
+
+</body>
+
+</html>
