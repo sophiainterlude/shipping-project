@@ -129,17 +129,17 @@
 // }).catch(function (error) { console.error(error) })
 // // research on promise
 
-const menuButton = document.getElementById('menu-icon')
-console.log(menuButton)
-const nav = document.getElementById('desktop')
-menuButton.onclick = function(event){
+// const menuButton = document.getElementById('menu-icon')
+// console.log(menuButton)
+// const nav = document.getElementById('desktop')
+// menuButton.onclick = function(event){
     // event.preventDefault();
-    if(nav.classList.contains('hidden')){
-        nav.classList.remove('hidden')
-    }else nav.classList.add('hidden')
+    // if(nav.classList.contains('hidden')){
+        // nav.classList.remove('hidden')
+    // }else nav.classList.add('hidden')
 
-    console.log(nav)
-}
+    // console.log(nav)
+// }
  function taxcalculator(salary, taxrate, cb){
     const tax = salary * taxrate
     cb(tax)
@@ -152,3 +152,17 @@ taxcalculator(20000, 0.2, function(tax){
     console.log("tax", tax)
 })
 
+const menuButton = document.getElementById("menu-icon");
+const nav = document.getElementById("desktop");
+
+menuButton.addEventListener("click", function () {
+    nav.classList.toggle("hidden");
+});
+
+nav.querySelectorAll("a, button").forEach(function (item) {
+    item.addEventListener("click", function () {
+        if (window.innerWidth < 561) {
+            nav.classList.add("hidden");
+        }
+    });
+});
